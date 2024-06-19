@@ -1,0 +1,55 @@
+.home {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: hsl(356, 100%, 66%);
+  color: #fff;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .home-buttons {
+    .start-free,
+    .learn-more {
+      background: #fff;
+      border: none;
+      color: #ff7a18;
+      padding: 1rem 2rem;
+      margin: 0 0.5rem;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    .learn-more {
+      background: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .home {
+    padding: 5rem 1rem;
+  }
+
+  .home-buttons {
+    display: flex;
+    flex-direction: column;
+
+    .start-free,
+    .learn-more {
+      margin: 0.5rem 0;
+    }
+
+    .learn-more {
+      border: 1px solid #ff7a18;
+    }
+  }
+}

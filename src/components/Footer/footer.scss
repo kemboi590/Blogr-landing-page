@@ -1,0 +1,81 @@
+.footer {
+  padding: 4rem 2rem;
+  background: #333;
+  color: #fff;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .footer-links {
+      display: flex;
+
+      div {
+        margin-right: 2rem;
+
+        h4 {
+          font-size: 1.2rem;
+          margin-bottom: 1rem;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            margin-bottom: 0.5rem;
+
+            a {
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// place it vertical and in the center
+@media screen and (max-width: 600px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+
+    .footer-links {
+      margin-top: 1rem;
+
+      div {
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+          margin-bottom: 2.4rem;
+        }
+
+        ul {
+          li {
+            margin-bottom: 1rem;
+
+            a {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
