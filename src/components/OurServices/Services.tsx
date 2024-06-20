@@ -8,7 +8,7 @@ export const Services = () => {
         <section className="services">
             <div className="service">
                 <div className="phone-image-div">
-                    <img src={servicePhone} alt="service phone" width='200px' />
+                    <img src={servicePhone} alt="service phone" />
                 </div>
                 <div className="desc">
                     <h2>State of the Art Infrastructure</h2>
